@@ -5,7 +5,7 @@ use Inertia\Inertia;
 use Laravel\Fortify\Features;
 
 Route::get('/', function () {
-    return Inertia::render('home', [
+    return Inertia::render('home/index', [
         'canRegister' => Features::enabled(Features::registration()),
     ]);
 })->name('home');
