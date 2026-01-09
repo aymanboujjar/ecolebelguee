@@ -1,5 +1,7 @@
 import SectionBlock from './section-block';
 import QuoteBlock from './quote-block';
+import image1 from '../../../../../../public/assets/images/scolarite/EBM-C_0344.jpg'
+import image2 from '../../../../../../public/assets/images/scolarite/EBM-C_0345.jpg'
 
 const sections = [
     {
@@ -30,7 +32,7 @@ const sections = [
                 </ul>
             </>
         ),
-        image: '/assets/images/maternelle.jpg',
+        image: image1,
         imagePosition: 'right',
     },
     {
@@ -65,7 +67,7 @@ const sections = [
                 </ul>
             </>
         ),
-        image: null,
+        image: image2,
     },
     {
         title: 'Apprendre en maternelle : notre approche',
