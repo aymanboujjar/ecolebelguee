@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Brain, TrendingUp, Target } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import image from '../../../../../../public/assets/images/scolarite/100.JPG'
 
 export default function PrimaireSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,13 +25,14 @@ export default function PrimaireSection() {
 
                 <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
                     {/* Icon/Visual */}
-                    <div className="flex items-center justify-center order-1 md:order-1">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-belgYellow to-belgRed rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                            <div className="relative bg-gradient-to-br from-belgYellow via-white to-belgRed rounded-full p-12 shadow-2xl">
-                                <BookOpen className="h-32 w-32 text-belgBlack" />
-                            </div>
-                        </div>
+                    <div className="relative order-1">
+                        <div className="absolute inset-0 bg-gradient-to-r from-belgYellow to-belgRed rounded-2xl transform -rotate-3"></div>
+                        <img
+                            src={image}
+                            alt="Parcours scolaire complet"
+                            className="relative rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+                            onError={() => setImageError(true)}
+                        />
                     </div>
 
                     {/* Content */}
@@ -90,10 +92,10 @@ export default function PrimaireSection() {
                 <div className="text-center">
                     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                         <DialogTrigger asChild>
-                                    <Button
-                                        size="lg"
-                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
-                                    >
+                            <Button
+                                size="lg"
+                                className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
+                            >
                                 En savoir plus sur l'enseignement primaire dans nos écoles
                             </Button>
                         </DialogTrigger>
