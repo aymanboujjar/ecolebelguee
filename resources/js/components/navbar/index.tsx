@@ -27,21 +27,22 @@ export default function Navbar() {
 
     const navItems: NavItem[] = [
         { label: 'Accueil', href: '/' },
-        { label: 'L’excellence belge', href: '/pourquoi' },
+        { label: 'L’excellence belge', href: '/lexcellence-belge' },
         {
             label: 'Scolarité',
             items: [
-                { label: 'Programmes', href: '/scolarite/programmes' },
-                { label: 'Calendrier', href: '/scolarite/calendrier' },
-                { label: 'Examens', href: '/scolarite/examens' },
+                { label: 'Maternelle', href: '/maternelle' },
+                {
+                    label: 'Parcours scolaire (2-18 ans)',
+                    href: '/parcours-scolaire-2-18-ans',
+                },
             ],
         },
         {
             label: 'Admissions',
             items: [
-                { label: 'Processus', href: '/admissions/processus' },
-                { label: 'Documents requis', href: '/admissions/documents' },
-                { label: 'Frais', href: '/admissions/frais' },
+                { label: "Conditions de L'admissions", href: '/admissions/conditions' },
+                { label: 'Frais de scolarité', href: '/admissions/frais' },
             ],
         },
         {
