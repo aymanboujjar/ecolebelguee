@@ -31,9 +31,11 @@ export default function Navbar() {
         {
             label: 'Scolarité',
             items: [
-                { label: 'Programmes', href: '/scolarite/programmes' },
-                { label: 'Calendrier', href: '/scolarite/calendrier' },
-                { label: 'Examens', href: '/scolarite/examens' },
+                { label: 'Maternelle', href: '/maternelle' },
+                {
+                    label: 'Parcours scolaire (2-18 ans)',
+                    href: '/parcours-scolaire-2-18-ans',
+                },
             ],
         },
         {
