@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Baby, Sparkles, Users, Heart } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import image from '../../../../../../public/assets/images/scolarite/EBM-C_0344.jpg'
 
 export default function MaternelleSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -65,11 +66,14 @@ export default function MaternelleSection() {
 
                     {/* Icon/Visual */}
                     <div className="flex items-center justify-center">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-belgYellow to-belgRed rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                            <div className="relative bg-gradient-to-br from-belgYellow via-white to-belgRed rounded-full p-12 shadow-2xl">
-                                <Baby className="h-32 w-32 text-belgBlack" />
-                            </div>
+                        <div className="relative order-1">
+                            <div className="absolute inset-0 bg-gradient-to-r from-belgYellow to-belgRed rounded-2xl transform -rotate-3"></div>
+                            <img
+                                src={image}
+                                alt="Parcours scolaire complet"
+                                className="relative rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+                                onError={() => setImageError(true)}
+                            />
                         </div>
                     </div>
                 </div>
@@ -78,10 +82,10 @@ export default function MaternelleSection() {
                 <div className="text-center">
                     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                         <DialogTrigger asChild>
-                                    <Button
-                                        size="lg"
-                                        className="bg-belgYellow hover:bg-belgYellow/90 text-belgBlack px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
-                                    >
+                            <Button
+                                size="lg"
+                                className="bg-belgYellow hover:bg-belgYellow/90 text-belgBlack px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
+                            >
                                 En savoir plus sur la maternelle dans nos écoles
                             </Button>
                         </DialogTrigger>

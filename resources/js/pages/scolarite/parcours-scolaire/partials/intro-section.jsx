@@ -3,6 +3,7 @@ import { GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Eye } from 'lucide-react';
+import image from '../../../../../../public/assets/images/scolarite/100.JPG';
 
 export default function IntroSection() {
     const [imageError, setImageError] = useState(false);
@@ -15,20 +16,14 @@ export default function IntroSection() {
                     {/* Image */}
                     <div className="relative order-1">
                         <div className="absolute inset-0 bg-gradient-to-r from-belgYellow to-belgRed rounded-2xl transform -rotate-3"></div>
-                        {!imageError ? (
-                            <img 
-                                src="/assets/images/01.jpg" 
-                                alt="Parcours scolaire complet" 
-                                className="relative rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
-                                onError={() => setImageError(true)}
-                            />
-                        ) : (
-                            <div className="relative rounded-2xl shadow-2xl w-full h-96 bg-gradient-to-br from-belgYellow/20 to-belgRed/20 flex items-center justify-center">
-                                <GraduationCap className="h-24 w-24 text-gray-400" />
-                            </div>
-                        )}
+                        <img
+                            src={image}
+                            alt="Parcours scolaire complet"
+                            className="relative rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+                            onError={() => setImageError(true)}
+                        />
                     </div>
-                    
+
                     {/* Content */}
                     <div className="order-2 space-y-6">
                         <div className="space-y-4">
@@ -45,7 +40,7 @@ export default function IntroSection() {
                                 De ce fait, tous nos enseignants sont diplômés de l'enseignement supérieur belge, spécialisés dans leur domaine d'enseignement et expatriés de Belgique.
                             </p>
                         </div>
-                        
+
                         {/* CTA Button */}
                         <div className="mt-8">
                             <Dialog open={isParcoursModalOpen} onOpenChange={setIsParcoursModalOpen}>
