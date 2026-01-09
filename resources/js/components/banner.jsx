@@ -3,14 +3,14 @@ import { Link } from '@inertiajs/react';
 
 export default function Banner({ title, description, buttonText = "Découvrir nos valeurs", buttonLink = "#valeurs" }) {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-[var(--color-belg-yellow)] via-[var(--color-belg-red)] to-[var(--color-belg-black)] text-white">
+        <section className="relative overflow-hidden bg-gradient-to-r from-[var(--color-belg-black)] via-[var(--color-belg-yellow)] to-[var(--color-belg-red)] text-white">
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 h-72 w-72 animate-pulse rounded-full bg-white/10 blur-3xl"></div>
                 <div className="absolute right-10 bottom-20 h-96 w-96 animate-pulse rounded-full bg-white/5 blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/4 h-64 w-64 animate-pulse rounded-full bg-white/5 blur-2xl"></div>
             </div>
-            <div className="relative container mx-auto flex h-[50vh] items-center justify-center px-6">
+            <div className="relative container mx-auto flex h-[60vh] items-center justify-center px-6">
                 <div className="mx-auto max-w-4xl text-center">
                     <h1 className="mb-6 text-3xl leading-tight font-bold tracking-tight md:text-5xl">
                         {title}
