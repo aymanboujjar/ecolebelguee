@@ -1,6 +1,6 @@
 export default function OverviewSection() {
     return (
-        <section className="border-t border-gray-200 bg-white py-24 md:py-32">
+        <section className="border-t border-gray-200 bg-white py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                     {/* Left Column - Text Content */}
@@ -10,8 +10,8 @@ export default function OverviewSection() {
                                 Présentation
                             </p>
                         </div>
-                        <h2 className="mb-6 text-4xl font-bold text-belgBlack md:text-5xl lg:text-6xl">
-                            Un campus moderne
+                        <h2 className="mb-6 text-3xl font-bold text-belgBlack md:text-4xl lg:text-5xl">
+                            Un campus moderne - Rabat
                         </h2>
                         <div className="space-y-4 text-lg leading-relaxed text-gray-700">
                             <p>
@@ -55,7 +55,7 @@ export default function OverviewSection() {
                 </div>
 
                 {/* Infrastructure Details */}
-                <div className="mt-16 grid gap-8 md:grid-cols-2">
+                <div className="mt-12 grid gap-8 md:grid-cols-2">
                     <div>
                         <h3 className="mb-4 text-2xl font-bold text-belgBlack">
                             Espaces d'apprentissage
@@ -107,4 +107,3 @@ export default function OverviewSection() {
         </section>
     );
 }
-

@@ -1,4 +1,4 @@
-import { Users, UtensilsCrossed, Bus, TreePine, CheckCircle2 } from 'lucide-react';
+import { Users, UtensilsCrossed, TreePine, CheckCircle2 } from 'lucide-react';
 
 export default function ServicesSection() {
     const services = [
@@ -27,18 +27,6 @@ export default function ServicesSection() {
                 'Un service de restauration est proposé avec des repas chauds préparés et servis sur place. Les menus sont équilibrés et variés, répondant aux besoins nutritionnels des élèves. La cantine est un service facultatif, proposé sur inscription.',
         },
         {
-            id: 'transport',
-            title: 'Transport',
-            icon: Bus,
-            features: [
-                'Service de transport organisé',
-                'Itinéraires optimisés',
-                'Contractualisation directe',
-            ],
-            description:
-                'Un service de transport scolaire est organisé à l\'école belge de Rabat. Ce service facilite les déplacements des élèves vers et depuis l\'établissement. Le service est payant et contractualisé directement entre les familles et le prestataire.',
-        },
-        {
             id: 'activites',
             title: 'Activités Extrascolaires',
             icon: TreePine,
@@ -53,9 +41,9 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section className="border-t border-gray-200 bg-white py-24 md:py-32">
+        <section className="border-t border-gray-200 bg-white py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-                <div className="mb-16 text-center">
+                <div className="mb-12 text-center">
                     <div className="mb-4 inline-block border-l-4 border-belgYellow pl-4">
                         <p className="text-sm font-semibold uppercase tracking-wider text-belgBlack">
                             Services
@@ -70,42 +58,38 @@ export default function ServicesSection() {
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2">
+                <div className="grid gap-6 md:grid-cols-3">
                     {services.map((service) => {
                         const Icon = service.icon;
                         return (
                             <div
                                 key={service.id}
-                                className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white p-8 transition-all hover:border-belgYellow hover:shadow-xl"
+                                className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-6 transition-all hover:border-belgYellow hover:shadow-lg"
                             >
-                                <div className="mb-6 flex items-start justify-between">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-gray-200 bg-white transition-all group-hover:border-belgYellow group-hover:bg-belgYellow/5">
-                                            <Icon className="h-8 w-8 text-belgBlack transition-colors group-hover:text-belgYellow" />
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-belgBlack md:text-3xl">
-                                            {service.title}
-                                        </h3>
+                                <div className="mb-4 flex items-center gap-3">
+                                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white transition-all group-hover:border-belgYellow group-hover:bg-belgYellow/5">
+                                        <Icon className="h-6 w-6 text-belgBlack transition-colors group-hover:text-belgYellow" />
                                     </div>
+                                    <h3 className="text-xl font-bold text-belgBlack md:text-2xl">
+                                        {service.title}
+                                    </h3>
                                 </div>
 
-                                <div className="mb-6 space-y-2">
+                                <div className="mb-4 flex-1 space-y-2">
                                     {service.features.map((feature, index) => (
                                         <div
                                             key={index}
                                             className="flex items-center gap-2 text-gray-700"
                                         >
-                                            <CheckCircle2 className="h-5 w-5 shrink-0 text-belgYellow" />
+                                            <CheckCircle2 className="h-4 w-4 shrink-0 text-belgYellow" />
                                             <span className="text-sm font-medium">{feature}</span>
                                         </div>
                                     ))}
                                 </div>
 
-                                <p className="text-base leading-relaxed text-gray-700">
+                                <p className="text-sm leading-relaxed text-gray-700">
                                     {service.description}
                                 </p>
-
-                                <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-belgYellow/5 transition-all group-hover:bg-belgYellow/10" />
                             </div>
                         );
                     })}

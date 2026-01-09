@@ -28,7 +28,7 @@ export default function GallerySection() {
     ];
 
     return (
-        <section className="border-t border-gray-200 bg-white py-24 md:py-32">
+        <section className="border-t border-gray-200 bg-white py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
                 <div className="mb-12">
                     <div className="mb-4 inline-block border-l-4 border-belgYellow pl-4">

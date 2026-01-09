@@ -2,7 +2,7 @@ import { Clock, Calendar, Bell } from 'lucide-react';
 
 export default function SchedulesSection() {
     return (
-        <section className="border-t border-gray-200 bg-white py-24 md:py-32">
+        <section className="border-t border-gray-200 bg-white py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
                 <div className="mb-16 text-center">
                     <div className="mb-4 inline-block border-l-4 border-belgYellow pl-4">
@@ -15,10 +15,10 @@ export default function SchedulesSection() {
                     </h2>
                 </div>
 
-                <div className="grid gap-12 lg:grid-cols-2">
+                <div className="grid gap-12 lg:grid-cols-2 lg:items-stretch">
                     {/* Left Column - Image with Info Cards */}
-                    <div className="space-y-6">
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                    <div className="flex flex-col space-y-6">
+                        <div className="relative flex-1 overflow-hidden rounded-lg">
                             <img
                                 src="/assets/images/rabat/_MAN0187.jpg"
                                 alt="Horaires"
@@ -68,7 +68,7 @@ export default function SchedulesSection() {
                     </div>
 
                     {/* Right Column - Text Content */}
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col justify-center h-full">
                         <div className="mb-8 space-y-6">
                             <div>
                                 <h3 className="mb-3 text-2xl font-bold text-belgBlack">
