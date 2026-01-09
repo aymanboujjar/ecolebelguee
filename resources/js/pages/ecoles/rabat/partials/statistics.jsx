@@ -3,28 +3,28 @@ import { Users, GraduationCap, Globe, MapPin } from 'lucide-react';
 export default function StatisticsSection() {
     const stats = [
         {
-            value: '935',
+            value: '1045',
             label: 'Élèves',
             icon: Users,
-            description: 'De 2 à 18 ans',
+            description: 'De 2 à 17 ans',
         },
         {
-            value: '58',
+            value: '60',
             label: 'Enseignants',
             icon: GraduationCap,
             description: 'Qualifiés et certifiés',
         },
         {
-            value: '58',
+            value: '62',
             label: 'Expatriés',
             icon: Globe,
             description: 'Professionnels internationaux',
         },
         {
-            value: '7.5',
+            value: '1.5',
             label: 'Hectares',
             icon: MapPin,
-            description: 'Campus spacieux',
+            description: 'Campus à Hay Riad',
         },
     ];
 

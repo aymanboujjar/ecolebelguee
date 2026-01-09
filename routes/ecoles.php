@@ -8,6 +8,10 @@ Route::prefix('ecoles')->name('ecoles.')->group(function () {
         return Inertia::render('ecoles/casa/index');
     })->name('casablanca');
 
+    Route::get('/rabat', function () {
+        return Inertia::render('ecoles/rabat/index');
+    })->name('rabat');
+
     Route::get('/localisation', function () {
         return Inertia::render('ecoles/localisation');
     })->name('localisation');
