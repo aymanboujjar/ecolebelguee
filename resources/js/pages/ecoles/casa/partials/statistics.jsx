@@ -1,4 +1,4 @@
-import { Users, GraduationCap, Globe } from 'lucide-react';
+import { Users, GraduationCap, Globe, MapPin } from 'lucide-react';
 
 export default function StatisticsSection() {
     const stats = [
@@ -6,45 +6,67 @@ export default function StatisticsSection() {
             value: '935',
             label: 'Élèves',
             icon: Users,
-            bgColor: 'bg-blue-600',
-            textColor: 'text-white',
+            description: 'De 2 à 18 ans',
         },
         {
             value: '58',
             label: 'Enseignants',
             icon: GraduationCap,
-            bgColor: 'bg-gray-100',
-            textColor: 'text-belgBlack',
+            description: 'Qualifiés et certifiés',
         },
         {
             value: '58',
             label: 'Expatriés',
             icon: Globe,
-            bgColor: 'bg-belgYellow',
-            textColor: 'text-belgBlack',
+            description: 'Professionnels internationaux',
+        },
+        {
+            value: '7.5',
+            label: 'Hectares',
+            icon: MapPin,
+            description: 'Campus spacieux',
         },
     ];
 
     return (
-        <section className="border-t border-gray-200 bg-white py-16 md:py-24">
+        <section className="border-t border-gray-200 bg-white py-24 md:py-32">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-                <div className="grid gap-4 md:grid-cols-3">
+                <div className="mb-16 text-center">
+                    <div className="mb-4 inline-block border-l-4 border-belgYellow pl-4">
+                        <p className="text-sm font-semibold uppercase tracking-wider text-belgBlack">
+                            Chiffres clés
+                        </p>
+                    </div>
+                    <h2 className="text-4xl font-bold text-belgBlack md:text-5xl lg:text-6xl">
+                        Notre campus en chiffres
+                    </h2>
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {stats.map((stat, index) => {
                         const Icon = stat.icon;
                         return (
                             <div
                                 key={index}
-                                className={`${stat.bgColor} ${stat.textColor} rounded-lg p-8 text-center transition-transform hover:scale-105`}
+                                className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white p-8 transition-all hover:border-belgYellow hover:shadow-lg"
                             >
-                                <div className="mb-4 flex justify-center">
-                                    <Icon className="h-12 w-12" />
+                                <div className="relative z-10">
+                                    <div className="mb-4 flex items-center justify-between">
+                                        <div className="flex h-14 w-14 items-center justify-center rounded-lg border border-gray-200 bg-white transition-colors group-hover:border-belgYellow group-hover:bg-belgYellow/5">
+                                            <Icon className="h-7 w-7 text-belgBlack transition-colors group-hover:text-belgYellow" />
+                                        </div>
+                                    </div>
+                                    <div className="mb-2 text-5xl font-bold leading-none text-belgBlack md:text-6xl">
+                                        {stat.value}
+                                    </div>
+                                    <div className="mb-1 text-xl font-bold text-belgBlack">
+                                        {stat.label}
+                                    </div>
+                                    <div className="text-sm text-gray-600">
+                                        {stat.description}
+                                    </div>
                                 </div>
-                                <div className="mb-2 text-5xl font-bold md:text-6xl">
-                                    {stat.value}
-                                </div>
-                                <div className="text-lg font-semibold uppercase tracking-wide">
-                                    {stat.label}
-                                </div>
+                                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-belgYellow/5 transition-all group-hover:bg-belgYellow/10" />
                             </div>
                         );
                     })}
@@ -53,4 +75,3 @@ export default function StatisticsSection() {
         </section>
     );
 }
-

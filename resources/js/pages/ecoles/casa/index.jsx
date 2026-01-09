@@ -1,5 +1,6 @@
 import AppLayout from '@/layouts/app-layout';
 import HeroSection from './partials/hero';
+import OverviewSection from './partials/overview';
 import StatisticsSection from './partials/statistics';
 import SchedulesSection from './partials/schedules';
 import CurriculumSection from './partials/curriculum';
@@ -10,6 +11,7 @@ export default function Casa() {
     return (
         <AppLayout>
             <HeroSection />
+            <OverviewSection />
             <StatisticsSection />
             <SchedulesSection />
             <CurriculumSection />
@@ -18,4 +20,3 @@ export default function Casa() {
         </AppLayout>
     );
 }
-
