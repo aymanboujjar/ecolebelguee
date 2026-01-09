@@ -20,7 +20,7 @@ export default function SchedulesSection() {
                     <div className="flex flex-col space-y-6">
                         <div className="relative flex-1 overflow-hidden rounded-lg">
                             <img
-                                src="/assets/images/casa/EBM-C_0010_1_cropped.jpg"
+                                src="/assets/images/rabat/_MAN0187.jpg"
                                 alt="Horaires"
                                 className="h-full w-full object-cover"
                                 loading="lazy"
@@ -61,7 +61,7 @@ export default function SchedulesSection() {
                                     </h3>
                                 </div>
                                 <p className="text-sm text-gray-700">
-                                    Fin à mi-journée
+                                    Pas de cours l'après-midi
                                 </p>
                             </div>
                         </div>
@@ -75,10 +75,9 @@ export default function SchedulesSection() {
                                     Organisation hebdomadaire
                                 </h3>
                                 <p className="text-lg leading-relaxed text-gray-700">
-                                    L'école belge de Casablanca organise son enseignement du lundi au
-                                    vendredi. Le mercredi, les cours prennent fin à la mi-journée,
-                                    permettant aux élèves de participer à des activités extrascolaires
-                                    ou de se reposer.
+                                    L'école belge de Rabat organise son enseignement du lundi au
+                                    vendredi. Pas de cours le mercredi après-midi, permettant aux
+                                    élèves de participer à des activités extrascolaires ou de se reposer.
                                 </p>
                             </div>
                             <div>
@@ -115,3 +114,4 @@ export default function SchedulesSection() {
         </section>
     );
 }
+

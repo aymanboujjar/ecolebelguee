@@ -6,7 +6,7 @@
 //                 <div
 //                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 //                     style={{
-//                         backgroundImage: "url('/assets/images/casa/EBM-C_0013_1_cropped.jpg')",
+//                         backgroundImage: "url('/assets/images/rabat/HIC_6862.jpg')",
 //                     }}
 //                 />
 //                 <div className="absolute inset-0 bg-belgBlack/40" />
@@ -17,32 +17,33 @@
 //                 <div className="mx-auto w-full max-w-5xl">
 //                     <div className="mb-8 inline-block border-l-4 border-belgYellow pl-6">
 //                         <p className="text-sm font-semibold uppercase tracking-wider text-belgYellow">
-//                             Campus de Casablanca
+//                             Campus de Rabat
 //                         </p>
 //                     </div>
                     
 //                     <h1 className="mb-6 text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl">
 //                         Excellence académique
 //                         <br />
-//                         <span className="text-belgYellow">à Darbouazza</span>
+//                         <span className="text-belgYellow">à Hay Riad</span>
 //                     </h1>
                     
 //                     <p className="mb-12 max-w-2xl text-xl leading-relaxed text-gray-100 md:text-2xl">
-//                         7,5 hectares d'espaces d'apprentissage modernes, 940 élèves de 2 à 18 ans, 
-//                         un environnement ouvert sur la nature avec une pédagogie innovante.
+//                         1,5 hectares d'espaces modernes, 1050 élèves de 2 à 17 ans, 
+//                         un environnement urbain vert et calme au cœur de Rabat.
 //                     </p>
 //                 </div>
 //             </div>
 //         </section>
 //     );
 // }
+
 import Banner from '@/components/banner';
 
 export default function HeroSection() {
     return (
         <Banner 
-            title="Campus de Casablanca"
-            description="7,5 hectares d'espaces d'apprentissage modernes, 940 élèves de 2 à 18 ans, un environnement ouvert sur la nature avec une pédagogie innovante à Darbouazza."
+            title="Campus de Rabat"
+            description="1,5 hectares d'espaces modernes, 1050 élèves de 2 à 17 ans, un environnement urbain vert et calme au cœur de Rabat à Hay Riad."
         />
     );
 }

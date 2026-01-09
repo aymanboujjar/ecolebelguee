@@ -1,30 +1,29 @@
 export default function GallerySection() {
     const images = [
         {
-            src: '/assets/images/casa/gallery1 (1).jpg',
-            alt: 'Vue extérieure du campus',
+            src: '/assets/images/rabat/gallerry.jpg',
+            alt: 'Groupe d\'élèves et enseignants',
         },
         {
-            src: '/assets/images/casa/gallery1 (2).jpg',
-            alt: 'Vue extérieure du campus',
+            src: '/assets/images/rabat/gallerry (2).jpg',
+            alt: 'Salle de classe maternelle',
         },
         {
-            src: '/assets/images/casa/gallery1 (3).jpg',
-            alt: 'Vue extérieure du campus',
+            src: '/assets/images/rabat/gallerry (3).jpg',
+            alt: 'Aire de jeux extérieure',
         },
         {
-            src: '/assets/images/casa/gallery1 (4).jpg',
-            alt: 'Vue extérieure du campus',
+            src: '/assets/images/rabat/gallerry (4).jpg',
+            alt: 'Vue aérienne du campus',
         },
         {
-            src: '/assets/images/casa/gallery1 (5).jpg',
-            alt: 'Vue extérieure du campus',
+            src: '/assets/images/rabat/gallerry (5).jpg',
+            alt: 'Salle informatique',
         },
         {
-            src: '/assets/images/casa/gallery1 (6).jpg',
-            alt: 'Vue extérieure du campus',
-        }
-        
+            src: '/assets/images/rabat/gallerry (6).jpg',
+            alt: 'Espace extérieur de rassemblement',
+        },
     ];
 
     return (
@@ -60,3 +59,4 @@ export default function GallerySection() {
         </section>
     );
 }
+

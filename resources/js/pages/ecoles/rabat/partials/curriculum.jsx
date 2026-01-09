@@ -8,9 +8,9 @@ export default function CurriculumSection() {
             icon: BookOpen,
             schedules: [
                 { level: 'Ouverture', times: ['07h45 Ouverture des portes de l\'école'] },
-                { level: 'Début des cours', times: ['08h25 Début des cours / 8h50 en section maternelle'] },
+                { level: 'Début des cours', times: ['08h25 Début des cours'] },
                 { level: 'Fin des cours', times: ['15h30 Fin des cours'] },
-                { level: 'Fermeture', times: ['17h00 Fermeture des portes de l\'école'] },
+                { level: 'Fermeture', times: ['18h00 Fermeture des portes de l\'école'] },
                 { level: 'Mercredi', times: ['Mercredi fin des cours à 12h10 en maternelle', 'Mercredi fin des cours à 13h00 en primaire'] },
             ],
         },
@@ -20,9 +20,8 @@ export default function CurriculumSection() {
             icon: Building2,
             schedules: [
                 { level: 'Début des cours', times: ['08h25 Début des cours'] },
-                { level: 'Fin des cours', times: ['16h30 Fin des cours'] },
-                { level: 'Horaires spéciaux', times: ['Les mardis et jeudis les élèves du dernier degré terminent les cours à 17h20'] },
-                { level: 'Mercredi', times: ['Le mercredi les cours se terminent à 13h00'] },
+                { level: 'Fin des cours', times: ['16h20 Fin des cours (lundi, mardi, jeudi)', '15h30 Fin des cours (vendredi)'] },
+                { level: 'Mercredi', times: ['Mercredi fin des cours à 12h10'] },
             ],
         },
     ];
@@ -82,3 +81,4 @@ export default function CurriculumSection() {
         </section>
     );
 }
+

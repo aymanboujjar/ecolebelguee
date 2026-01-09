@@ -7,7 +7,7 @@ import CurriculumSection from './partials/curriculum';
 import GallerySection from './partials/gallery';
 import ServicesSection from './partials/services';
 
-export default function Casa() {
+export default function Rabat() {
     return (
         <AppLayout>
             <HeroSection />
@@ -20,3 +20,4 @@ export default function Casa() {
         </AppLayout>
     );
 }
+
