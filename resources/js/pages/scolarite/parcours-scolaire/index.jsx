@@ -1,25 +1,27 @@
 import AppLayout from '@/layouts/app-layout';
 import Banner from '@/components/banner';
+import IntroSection from './partials/intro-section';
+import MaternelleSection from './partials/maternelle-section';
+import PrimaireSection from './partials/primaire-section';
+import SecondaireSection from './partials/secondaire-section';
+import OrientationSection from './partials/orientation-section';
 
 export default function ParcoursScolaire() {
     return (
         <AppLayout>
             <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
                 <Banner
-                    title="Parcours scolaire (2-18 ans)"
-                    description="Un parcours complet et cohérent de la maternelle au secondaire"
-                    buttonText="En savoir plus"
-                    buttonLink="/maternelle"
+                    title="Un parcours éducatif complet de 2 à 18 ans"
+                    description="De la maternelle au secondaire, chaque étape répond à des objectifs précis et prépare la suivante"
+                    buttonText="Découvrir nos valeurs"
+                    buttonLink="#"
                 />
-                <div className="container mx-auto max-w-6xl px-4 py-16 md:px-6 lg:px-8">
-                    <div className="rounded-2xl bg-white p-8 shadow-lg md:p-12">
-                        <p className="text-center text-lg text-gray-600">
-                            Contenu à venir...
-                        </p>
-                    </div>
-                </div>
+                <IntroSection />
+                <MaternelleSection />
+                <PrimaireSection />
+                <SecondaireSection />
+                <OrientationSection />
             </div>
         </AppLayout>
     );
 }
-
