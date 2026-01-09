@@ -1,9 +1,20 @@
 import { Button } from '@/components/ui/button';
 import { Link } from '@inertiajs/react';
 import { Home, ArrowLeft } from 'lucide-react';
+import { useEffect } from 'react';
 import AppLayout from '@/layouts/app-layout';
+import { initializeTheme } from '@/hooks/use-appearance';
 
 export default function Error404() {
+    // Force light mode on 404 page
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+            localStorage.setItem('appearance', 'light');
+        }
+    }, []);
+
     return (
         <AppLayout>
             <div className="flex min-h-[calc(100vh-5rem)] items-center justify-center px-4 py-16 md:py-24">
