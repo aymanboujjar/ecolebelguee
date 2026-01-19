@@ -7,6 +7,7 @@ import CurriculumSection from './partials/curriculum';
 import CalendarSection from './partials/calendar-section';
 import GallerySection from './partials/gallery';
 import ServicesSection from './partials/services';
+import MapSection from './partials/map-section';
 
 export default function Rabat() {
     return (
@@ -19,6 +20,7 @@ export default function Rabat() {
             <CalendarSection />
             <GallerySection />
             <ServicesSection />
+            <MapSection />
         </AppLayout>
     );
 }
